@@ -1,0 +1,56 @@
+# Operational settings for the Live Fashion Trend and Production Recommendation Agent.
+# No credentials here — Reddit OAuth secrets live in .env (see .env.example).
+
+google_trends:
+  region: "IN"              # ISO country code for pytrends geo parameter
+  window_months: 12          # historical window requested from pytrends
+  anchor_keyword: "denim jacket"   # stable term used to rescale batches against each other
+  batch_size: 5               # Google Trends compares at most 5 terms per request
+                               # (4 candidate keywords + 1 anchor keyword per batch)
+  request_delay_seconds: 5    # spacing between requests to reduce rate-limit risk
+
+reddit:
+  subreddits:
+    - femalefashionadvice
+    - malefashionadvice
+    - streetwear
+    - fashion
+  lookback_days: 30
+  max_posts_per_subreddit: 50
+  max_comments_per_post: 20
+
+trend_score:
+  weights:
+    google: 0.50
+    reddit_frequency: 0.30
+    sentiment: 0.20
+  momentum:
+    google_weight: 0.60
+    reddit_weight: 0.40
+    rising_threshold: 0.10
+    declining_threshold: -0.10
+
+inventory:
+  safety_buffer_days: 7
+
+production_rules:
+  increase_production:
+    min_trend_score: 70
+    direction: "Rising"
+  plan_for_next_season:
+    min_trend_score: 70
+    direction: "Rising"
+  discontinue:
+    max_trend_score: 40
+    direction: "Declining"
+    min_days_of_stock_multiplier: 2    # days_of_stock >= max(60, 2 * lead_time_days)
+    min_days_of_stock_floor: 60
+
+sentiment_model:
+  name: "cardiffnlp/twitter-roberta-base-sentiment-latest"
+
+paths:
+  catalog_csv: "config/catalog.csv"
+  inventory_csv: "data/inventory.csv"
+  cache_dir: "data/cache"
+  output_dir: "data/output"

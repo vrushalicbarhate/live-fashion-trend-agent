@@ -1,0 +1,19 @@
+item_id,product_type,material,color,google_keyword,product_aliases,material_aliases,color_aliases
+C001,t-shirt,cotton,white,white cotton t-shirt,tee|t shirt|tshirt,cotton,white|off-white
+C002,wide-leg trousers,linen,sage green,linen wide leg trousers,wide-leg pants|palazzo pants,linen,sage|sage green
+C003,cargo pants,denim,washed blue,denim cargo pants,cargos|cargo trousers,denim|jean,washed blue
+C004,hoodie,fleece,charcoal grey,charcoal hoodie,hoody|pullover hoodie,fleece,charcoal|dark grey|gunmetal
+C005,slip dress,satin,mauve,mauve satin slip dress,slip dress|cami dress,satin,mauve|dusty rose
+C006,blazer,wool,black,black wool blazer,jacket|sport coat,wool,black|jet black
+C007,crop top,cotton,pastel pink,pastel pink crop top,cropped tee|crop tee,cotton,pastel pink|baby pink
+C008,jeans,denim,mid-wash blue,mid wash denim jeans,denims|jean,denim,mid wash|medium blue
+C009,sweater,cashmere,cream,cream cashmere sweater,jumper|pullover,cashmere,cream|ivory
+C010,skirt,leather,black,black leather skirt,mini skirt|midi skirt,leather|faux leather,black
+C011,shirt,linen,white,white linen shirt,button up|button-down,linen,white|off-white
+C012,joggers,fleece,olive,olive fleece joggers,sweatpants|track pants,fleece,olive|army green
+C013,tank top,cotton,black,black cotton tank top,vest top|singlet,cotton,black
+C014,coat,wool,camel,camel wool coat,overcoat|topcoat,wool,camel|tan
+C015,shorts,denim,light blue,light blue denim shorts,jean shorts|cutoffs,denim|jean,light blue|faded blue
+C016,cardigan,knit,beige,beige knit cardigan,sweater cardigan,knit,beige|oatmeal
+C017,puffer jacket,polyester,black,black puffer jacket,puffer coat|down jacket,polyester|nylon,black
+C018,maxi dress,rayon,floral print,floral maxi dress,long dress|sundress,rayon|viscose,floral|floral print

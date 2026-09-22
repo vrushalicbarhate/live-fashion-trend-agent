@@ -1,0 +1,14 @@
+pandas>=2.0
+numpy>=1.24
+pyyaml>=6.0
+python-dotenv>=1.0
+pytrends>=4.9
+praw>=7.7
+spacy>=3.7
+transformers>=4.40
+torch>=2.2
+scikit-learn>=1.4
+langchain>=0.2
+streamlit>=1.35
+plotly>=5.20
+pytest>=8.0
